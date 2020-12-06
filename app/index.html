@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>БукcОнлайн</title>
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <div class="header__top">
+        <div class="container">
+          <ul class="header__top-menu">
+            <li class="header__top-item"><a class="header__top-link" href="#">Вход</a></li>
+            <li class="header__top-item"><a class="header__top-link" href="#">Мой аккаунт</a></li>
+            <li class="header__top-item"><a class="header__top-link" href="#">Статус заказа</a></li>
+            <li class="header__top-item"><a class="header__top-link" href="#">Помощь</a></li>
+          </ul>
+          <a class="header__logo" href="#">
+            <img class="header__logo-img" src="images/logo.png" alt="books online">
+          </a>
+          <div class="header__search">
+            <form class="search" action="">
+              <label for="">
+                <span class="speak">Поиск</span>
+                <input class="search__input" type="search" placeholder="Поиск...">
+              </label>
+              <button class="search__btn" type="submit"><span>Поиск</span></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="header__menu menu">
+      <div class="container">
+        <div class="menu__btn">
+          <div class="menu__btn-strip"></div>
+          <div class="menu__btn-strip"></div>
+          <div class="menu__btn-strip"></div>
+        </div>
+        <ul class="menu__list">
+          <li class="menu__item"><a class="menu__link" href="#">Компьютеры</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Кулинария</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Образование</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Здоровье</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Медицина</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Наука</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">История</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Философия</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="book-novelties">
+      <div class="container">
+        <div class="book-novelties__inner">
+          <div class="book-novelties__slider">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="swiper-slide__img" src="./images/slider-img/slide-bg.jpg" alt="slide">
+                  <img class="swiper-slide__cover" src="./images/slider-img/cover1.jpg" alt="book">
+                  <img class="swiper-slide__cover-cd" src="./images/slider-img/cover-cd.png" alt="book">
+                  <div class="swiper-slide__text">A Wanted Man
+                    <div class="swiper-slide__subtext">(Jack Reacher #17)</div>
+                    <div class="swiper-slide__author">By Lee Child</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-slide__img" src="./images/slider-img/slide-bg.jpg" alt="slide">
+                  <img class="swiper-slide__cover" src="./images/slider-img/cover1.jpg" alt="book">
+                  <img class="swiper-slide__cover-cd" src="./images/slider-img/cover-cd.png" alt="book">
+                  <div class="swiper-slide__text">A Wanted Man
+                    <div class="swiper-slide__subtext">(Jack Reacher #17)</div>
+                    <div class="swiper-slide__author">By Lee Child</div>
+                  </div>
+                </div>
+              </div>
+              <div class="button-arrow button-arrow--prev"></div>
+              <div class="button-arrow button-arrow--next"></div>
+            </div>
+          </div>
+          <div class="book-novelties__discounted">
+            <div class="book-novelties__book-month">Товар месяца</div>
+            <div class="book-novelties__book-name">The Human Face of Big Data
+              <img class="book-novelties__book-cover" src="images/book-cover.png" alt="book-cover"></div>
+            <div class="book-novelties__text">Скидка 45% сегодня</div>
+            <div class="book-novelties__price">475 р.</div>
+            <a class="book-novelties__btn" href="#">Купить сейчас</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main-content">
+      <div class="container">
+        <div class="main-content__inner">
+          <div class="aside">
+            <div class="aside__title">
+              Категории
+            </div>
+            <ul class="aside__list">
+              <a class="aside__link" href="#">Все</a>
+              <li class="aside__item">Фантастика и литература</li>
+              <ul class="aside__sublist">
+                <li class="aside__subitem"><a class="aside__sublink" href="#">Детская</a></li>
+                <li class="aside__subitem"><a class="aside__sublink" href="#">Фэнтези</a></li>
+                <li class="aside__subitem"><a class="aside__sublink" href="#">Мистика</a></li>
+                <li class="aside__subitem"><a class="aside__sublink" href="#">Романы</a></li>
+                <li class="aside__subitem"><a class="aside__sublink" href="#">Хорор</a></li>
+                <li class="aside__subitem"><a class="aside__sublink" href="#">Поэзия</a></li>
+                <li class="aside__subitem"><a class="aside__sublink" href="#">Художественная литература</a></li>
+                <li class="aside__subitem"><a class="aside__sublink" href="#">Криминал</a></li>
+              </ul>
+
+              <li class="aside__item">Научно-популярная литература</li>
+              <ul class="aside__sublist">
+                <li class="aside__subitem"><a class="aside__sublink" href="#">Юмор</a></li>
+                <li class="aside__subitem"><a class="aside__sublink" href="#">Кулинария</a></li>
+                <li class="aside__subitem"><a class="aside__sublink" href="#">Психология</a></li>
+                <li class="aside__subitem"><a class="aside__sublink" href="#">Медицина</a></li>
+                <li class="aside__subitem"><a class="aside__sublink" href="#">Творчество</a></li>
+                <li class="aside__subitem"><a class="aside__sublink" href="#">Фотография</a></li>
+                <li class="aside__subitem"><a class="aside__sublink" href="#">Юридическая литература</a></li>
+                <li class="aside__subitem"><a class="aside__sublink" href="#">История</a></li>
+                <li class="aside__subitem"><a class="aside__sublink" href="#">Бизнес</a></li>
+                <li class="aside__subitem"><a class="aside__sublink" href="#">Компьютерная литература</a></li>
+              </ul>
+
+              <li class="aside__item">Другое</li>
+              <ul class="aside__sublist">
+                <li class="aside__subitem"><a class="aside__sublink" href="#">Мать и дитя</a></li>
+                <li class="aside__subitem"><a class="aside__sublink" href="#">Путешествия</a></li>
+                <li class="aside__subitem"><a class="aside__sublink" href="#">Наука</a></li>
+                <li class="aside__subitem"><a class="aside__sublink" href="#">Спорт</a></li>
+              </ul>
+
+            </ul>
+          </div>
+          <div class="search-books">
+            <div class="search-books__inner">
+              <div class="search-books__tabs">
+                <a class="search-books__tabs-item search-books__tabs-item--active" href="#tab-1">Бестселлеры</a>
+                <a class="search-books__tabs-item" href="#tab-2">Новые поступления</a>
+                <a class="search-books__tabs-item" href="#tab-3">Подержанные книги</a>
+                <a class="search-books__tabs-item" href="#tab-4">Специальные предложения</a>
+              </div>
+              <div class="search-books__content">
+                <div id="tab-1" class="search-books__content-item search-books__content-item--active">
+                  <div class="search-books__content-wrapper">
+                    <div class="prod-card">
+                      <a class="prod-card__item" href="#">
+                        <img class="prod-card__img" src="images/content/preview.png" alt="preview">
+                        <a class="prod-card__name-book" href="#">Заяц с янтарными глазами</a>
+                        <div class="prod-card__price-book">350руб</div>
+                      </a>
+                    </div>
+                    <div class="prod-card">
+                      <a class="prod-card__item" href="#">
+                        <img class="prod-card__img" src="images/content/preview-2.png" alt="preview">
+                        <a class="prod-card__name-book" href="#">Любовь может случиться дважды</a>
+                        <div class="prod-card__price-book">280руб</div>
+                      </a>
+                    </div>
+                    <div class="prod-card">
+                      <a class="prod-card__item" href="#">
+                        <img class="prod-card__img" src="images/content/preview.png" alt="preview">
+                        <a class="prod-card__name-book" href="#">Заяц с янтарными глазами</a>
+                        <div class="prod-card__price-book">350руб</div>
+                      </a>
+                    </div>
+                    <div class="prod-card">
+                      <a class="prod-card__item" href="#">
+                        <img class="prod-card__img" src="images/content/preview-2.png" alt="preview">
+                        <a class="prod-card__name-book" href="#">Любовь может случиться дважды</a>
+                        <div class="prod-card__price-book">280руб</div>
+                      </a>
+                    </div>
+                    <div class="prod-card">
+                      <a class="prod-card__item" href="#">
+                        <img class="prod-card__img" src="images/content/preview.png" alt="preview">
+                        <a class="prod-card__name-book" href="#">Заяц с янтарными глазами</a>
+                        <div class="prod-card__price-book">350руб</div>
+                      </a>
+                    </div>
+                    <div class="prod-card">
+                      <a class="prod-card__item" href="#">
+                        <img class="prod-card__img" src="images/content/preview-2.png" alt="preview">
+                        <a class="prod-card__name-book" href="#">Любовь может случиться дважды</a>
+                        <div class="prod-card__price-book">280руб</div>
+                      </a>
+                    </div>
+                    <div class="prod-card">
+                      <a class="prod-card__item" href="#">
+                        <img class="prod-card__img" src="images/content/preview.png" alt="preview">
+                        <a class="prod-card__name-book" href="#">Заяц с янтарными глазами</a>
+                        <div class="prod-card__price-book">350руб</div>
+                      </a>
+                    </div>
+                    <div class="prod-card">
+                      <a class="prod-card__item" href="#">
+                        <img class="prod-card__img" src="images/content/preview-2.png" alt="preview">
+                        <a class="prod-card__name-book" href="#">Любовь может случиться дважды</a>
+                        <div class="prod-card__price-book">280руб</div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div id="tab-2" class="search-books__content-item">содержание 2 Hello</div>
+                <div id="tab-3" class="search-books__content-item">содержание 3</div>
+                <div id="tab-4" class="search-books__content-item">содержание 4</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <!-- <script src="js/main.min.js"></script> -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

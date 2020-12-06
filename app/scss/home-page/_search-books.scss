@@ -1,0 +1,27 @@
+.search-books {
+  margin-left: 30px;
+  background-color: $white;
+  width: 100%;
+
+  &__tabs-item {
+    &--active {
+      color: red;
+    }
+  }
+  &__content-item {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+  &__content {
+    padding: 20px;
+  }
+  &__content-wrapper {
+    display: flex;
+    // justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+}

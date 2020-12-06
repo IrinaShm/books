@@ -1,0 +1,52 @@
+.menu {
+  &__list {
+    display: flex;
+    @include reset-ul-li;
+
+    @media (max-width: 1024px) {
+      flex-wrap: wrap;
+    }
+    @media (max-width: 992px) {
+      display: none;
+    }
+  }
+  &__link {
+    display: block;
+    padding: 10px 17px;
+    font-size: 19px;
+    line-height: 26px;
+    color: $color-text;
+    border: 2px solid transparent;
+    outline: transparent;
+    transition: all .7s;
+    &:hover {
+      background-color: $color-bg;
+      color: $white;
+    }
+    &:focus {
+      border: 2px solid #787a85;
+      background-color: #4c4f65;
+      color: $white;
+    }
+  }
+  &__btn {
+    display: none;
+    @media (max-width: 992px) {
+      display: block;
+      width: 30px;
+      margin-top: 25px;
+      cursor: pointer;
+    }
+  }
+
+  &__btn-strip {
+    @media (max-width: 992px) {
+      background-color: #555;
+      height: 3px;
+      width: 30px;
+      & + & {
+        margin-top: 5px;
+      }
+    }
+  }
+}

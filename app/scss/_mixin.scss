@@ -1,0 +1,9 @@
+@mixin reset-ul-li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@mixin aside-padding {
+  padding: 10px 38px 10px 19px;
+}

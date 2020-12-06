@@ -1,0 +1,149 @@
+.book-novelties {
+  margin-top: 45px;
+  margin-bottom: 45px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__discounted {
+    width: 100%;
+    height: 302px;
+    background-color: #c9c9c9;
+    background-image: radial-gradient(circle, #abaaae, #3f3c4d);
+    padding: 0 4%;
+    margin-left: 30px;
+    text-align: center;
+    color: $white;
+  }
+  &__book-month {
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  &__book-name {
+    font-size: 15px;
+    line-height: 20px;
+    max-height: 100%;
+    margin-bottom: 3px;
+    background-image: url(../../images/book-img.png);
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center bottom;
+    padding-bottom: 8px;
+  }
+  &__book-cover {
+    display: block;
+    margin: 10px auto;
+    z-index: 100;
+  }
+  &__text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  &__price {
+    font-size: 26px;
+    line-height: 28px;
+    margin-bottom: 7px;
+  }
+  &__btn {
+    display: block;
+    background-image: linear-gradient(to top, #313340, #5c5f75);
+    padding: 4px 15px;
+    font-size: 18px;
+    line-height: 22px;
+    color: $white;
+    text-shadow: 0px 1px 0px rgba(74, 151, 74, 0.75);
+    border: 1px solid #999caa;
+    border-radius: 5px;
+  }
+}
+
+.swiper-container {
+  max-width: 714px;
+  height: 302px;
+}
+
+.swiper-slide {
+  position: relative;
+  &__cover {
+    position: absolute;
+    left: 9%;
+    bottom: 12%;
+    z-index: 2;
+  }
+  &__cover-cd {
+    position: absolute;
+    left: 23%;
+    bottom: 15%;
+    z-index: 2;
+  }
+  &__text {
+    font-size: 48px;
+    line-height: 50px;
+    color: $white;
+    font-weight: 700;
+    text-align: center;
+    position: absolute;
+    right: 10%;
+    top: 40%;
+    z-index: 2;
+  }
+  &__subtext {
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+  &__author {
+    font-size: 21px;
+    line-height: 32px;
+  }
+}
+
+.button-arrow {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(#000, 0.46);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 2%;
+  z-index: 5;
+  &::before {
+    content: url(../../images/icons/arrow-prev.png);
+    position: absolute;
+    top: 54%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+  }
+  &--next {
+    left: 92%;
+    z-index: 5;
+    &::before {
+      content: url(../../images/icons/arrow-next.png);
+      position: absolute;
+      top: 54%;
+      left: 54%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  // &:focus {
+  //   background-color: rgba(#0674ec, 0.9);
+  //   box-shadow: 0 0 5px 0 rgba(#0674ec, 0.8);
+  // }
+  
+  // &:hover {
+  //   background-color: rgba(#0674ec, 0.8);
+  // }
+  
+  // &:active {
+  //   box-shadow: inset 0 0 5px 0 rgba(#0674ec, 0.5);
+  // }
+
+  @media (max-width: 576px) {
+    display: none;
+  }
+}
